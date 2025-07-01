@@ -1,3 +1,70 @@
-*.pyc
-__pycache__/
+# === General ===
+*.log
+*.tmp
+*.DS_Store
+*.swp
+*.swo
 .env
+.env.local
+.env.*.local
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
+# === Node / React Native ===
+node_modules/
+npm-debug.log
+yarn-error.log
+.expo/
+dist/
+build/
+
+# === Android ===
+**/android/.gradle/
+**/android/build/
+**/android/local.properties
+**/android/*.iml
+**/android/.idea/
+**/android/*.apk
+**/android/*.aab
+**/android/*.keystore
+**/android/google-services.json
+**/android/output-metadata.json
+**/android/captures/
+**/android/.cxx/
+**/android/.externalNativeBuild/
+
+# === iOS ===
+**/ios/Pods/
+**/ios/build/
+**/ios/*.xcworkspace
+**/ios/*.xcuserstate
+**/ios/*.xcuserdata/
+**/ios/*.xcconfig
+
+# === Python / Backend ===
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/venv/
+**/.venv/
+**/backend-api/alembic/
+
+# === ML Models / Data ===
+**/*.h5
+**/*.ckpt
+**/ml-training/models/
+**/ml-training/data/
+**/*.ipynb_checkpoints/
+
+# === Docker ===
+**/.docker/
+**/docker-compose.override.yml
+
+# === System Files ===
+Thumbs.db
+ehthumbs.db
+desktop.ini
