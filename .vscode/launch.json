@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "FastAPI: Run Backend",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "main:app",
+        "--reload"
+      ],
+      "cwd": "${workspaceFolder}/backend-api",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "React Native: Android",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "android"
+    },
+    {
+      "name": "React Native: iOS",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "ios"
+    }
+  ]
+}

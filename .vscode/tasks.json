@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run ML Training",
+      "type": "shell",
+      "command": "python ml-training/src/model.py",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Run TensorFlow model training script"
+    },
+    {
+      "label": "Run Docker Compose",
+      "type": "shell",
+      "command": "docker-compose -f docker-configs/docker-compose.yml up --build",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Build and run all services"
+    },
+    {
+      "label": "Run FastAPI Manually",
+      "type": "shell",
+      "command": "uvicorn main:app --reload",
+      "options": {
+        "cwd": "backend-api"
+      },
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Manual FastAPI run"
+    }
+  ]
+}
